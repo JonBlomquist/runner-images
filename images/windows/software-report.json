@@ -1,11 +1,11 @@
 {
   "NodeType": "HeaderNode",
-  "Title": "Windows Server 2022",
+  "Title": "Windows Server 2025",
   "Children": [
     {
       "NodeType": "ToolVersionNode",
       "ToolName": "OS Version:",
-      "Version": "10.0.20348 Build 3561"
+      "Version": "10.0.26100 Build 3981"
     },
     {
       "NodeType": "ToolVersionNode",
@@ -15,11 +15,18 @@
     {
       "NodeType": "HeaderNode",
       "Title": "Windows features",
-      "Children": {
-        "NodeType": "ToolVersionNode",
-        "ToolName": "Windows Subsystem for Linux (WSLv1):",
-        "Version": "Enabled"
-      }
+      "Children": [
+        {
+          "NodeType": "ToolVersionNode",
+          "ToolName": "Windows Subsystem for Linux (WSLv1):",
+          "Version": "Enabled"
+        },
+        {
+          "NodeType": "ToolVersionNode",
+          "ToolName": "Windows Subsystem for Linux (Default, WSLv2):",
+          "Version": "2.4.13.0"
+        }
+      ]
     },
     {
       "NodeType": "HeaderNode",
@@ -37,12 +44,12 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Go",
-              "Version": "1.21.13"
+              "Version": "1.23.9"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Julia",
-              "Version": "1.10.5"
+              "Version": "1.11.5"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -52,22 +59,22 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "LLVM",
-              "Version": "18.1.8"
+              "Version": "19.1.7"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Node",
-              "Version": "18.20.8"
+              "Version": "22.15.1"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Perl",
-              "Version": "5.32.1"
+              "Version": "5.40.0"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "PHP",
-              "Version": "8.4.6"
+              "Version": "8.4.7"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -77,7 +84,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Ruby",
-              "Version": "3.0.7p220"
+              "Version": "3.3.8"
             }
           ]
         },
@@ -93,12 +100,12 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Composer",
-              "Version": "2.8.8"
+              "Version": "2.8.9"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Helm",
-              "Version": "3.17.2"
+              "Version": "3.17.3"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -108,12 +115,12 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "NPM",
-              "Version": "10.8.2"
+              "Version": "10.9.2"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "NuGet",
-              "Version": "6.13.2.1"
+              "Version": "6.14.0.116"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -128,12 +135,12 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "RubyGems",
-              "Version": "3.2.33"
+              "Version": "3.5.22"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Vcpkg",
-              "Version": "(build from commit bf1ca0b084)"
+              "Version": "(build from commit d9ccd77bb5)"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -197,7 +204,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "azcopy",
-              "Version": "10.29.0"
+              "Version": "10.29.1"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -227,7 +234,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "CodeQL Action Bundle",
-              "Version": "2.21.2"
+              "Version": "2.21.3"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -266,43 +273,33 @@
             },
             {
               "NodeType": "ToolVersionNode",
-              "ToolName": "InnoSetup",
-              "Version": "6.4.0"
-            },
-            {
-              "NodeType": "ToolVersionNode",
               "ToolName": "jq",
               "Version": "1.7.1"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Kind",
-              "Version": "0.27.0"
+              "Version": "0.28.0"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Kubectl",
-              "Version": "1.33.0"
-            },
-            {
-              "NodeType": "ToolVersionNode",
-              "ToolName": "Mercurial",
-              "Version": "5.0"
+              "Version": "1.33.1"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "gcc",
-              "Version": "12.2.0"
+              "Version": "14.2.0"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "gdb",
-              "Version": "11.2"
+              "Version": "16.2"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "GNU Binutils",
-              "Version": "2.39"
+              "Version": "2.44"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -311,13 +308,8 @@
             },
             {
               "NodeType": "ToolVersionNode",
-              "ToolName": "NSIS",
-              "Version": "3.10"
-            },
-            {
-              "NodeType": "ToolVersionNode",
               "ToolName": "OpenSSL",
-              "Version": "1.1.1w"
+              "Version": "3.4.1"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -343,11 +335,6 @@
               "NodeType": "ToolVersionNode",
               "ToolName": "Stack",
               "Version": "3.5.1"
-            },
-            {
-              "NodeType": "ToolVersionNode",
-              "ToolName": "Subversion (SVN)",
-              "Version": "1.14.5"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -392,13 +379,8 @@
           "Children": [
             {
               "NodeType": "ToolVersionNode",
-              "ToolName": "Alibaba Cloud CLI",
-              "Version": "3.0.272"
-            },
-            {
-              "NodeType": "ToolVersionNode",
               "ToolName": "AWS CLI",
-              "Version": "2.27.8"
+              "Version": "2.27.17"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -413,7 +395,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Azure CLI",
-              "Version": "2.72.0"
+              "Version": "2.73.0"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -423,7 +405,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "GitHub CLI",
-              "Version": "2.72.0"
+              "Version": "2.73.0"
             }
           ]
         },
@@ -434,17 +416,17 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Cargo",
-              "Version": "1.86.0"
+              "Version": "1.87.0"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Rust",
-              "Version": "1.86.0"
+              "Version": "1.87.0"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Rustdoc",
-              "Version": "1.86.0"
+              "Version": "1.87.0"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -457,28 +439,8 @@
               "Children": [
                 {
                   "NodeType": "ToolVersionNode",
-                  "ToolName": "bindgen",
-                  "Version": "0.71.1"
-                },
-                {
-                  "NodeType": "ToolVersionNode",
-                  "ToolName": "cargo-audit",
-                  "Version": "0.21.2"
-                },
-                {
-                  "NodeType": "ToolVersionNode",
-                  "ToolName": "cargo-outdated",
-                  "Version": "0.17.0"
-                },
-                {
-                  "NodeType": "ToolVersionNode",
-                  "ToolName": "cbindgen",
-                  "Version": "0.28.0"
-                },
-                {
-                  "NodeType": "ToolVersionNode",
                   "ToolName": "Clippy",
-                  "Version": "0.1.86"
+                  "Version": "0.1.87"
                 },
                 {
                   "NodeType": "ToolVersionNode",
@@ -496,27 +458,27 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Google Chrome",
-              "Version": "136.0.7103.93"
+              "Version": "136.0.7103.114"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Chrome Driver",
-              "Version": "136.0.7103.92"
+              "Version": "136.0.7103.94"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Microsoft Edge",
-              "Version": "136.0.3240.50"
+              "Version": "136.0.3240.76"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Microsoft Edge Driver",
-              "Version": "136.0.3240.50"
+              "Version": "136.0.3240.76"
             },
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Mozilla Firefox",
-              "Version": "138.0.1"
+              "Version": "138.0.4"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -556,9 +518,9 @@
             "NodeType": "TableNode",
             "Headers": "Version|Environment Variable",
             "Rows": [
-              "8.0.452+9 (default)|JAVA_HOME_8_X64",
+              "8.0.452+9|JAVA_HOME_8_X64",
               "11.0.27+6|JAVA_HOME_11_X64",
-              "17.0.15+6|JAVA_HOME_17_X64",
+              "17.0.15+6 (default)|JAVA_HOME_17_X64",
               "21.0.7+6.0|JAVA_HOME_21_X64"
             ]
           }
@@ -603,10 +565,9 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Go",
               "Versions": [
-                "1.20.14",
                 "1.21.13",
                 "1.22.12",
-                "1.23.8"
+                "1.23.9"
               ],
               "MajorVersionRegex": "^\\d+\\.\\d+",
               "ListType": "List"
@@ -615,10 +576,9 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Node.js",
               "Versions": [
-                "16.20.2",
                 "18.20.8",
-                "20.19.1",
-                "22.15.0"
+                "20.19.2",
+                "22.15.1"
               ],
               "MajorVersionRegex": "^\\d+",
               "ListType": "List"
@@ -627,7 +587,6 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Python",
               "Versions": [
-                "3.8.10",
                 "3.9.13",
                 "3.10.11",
                 "3.11.9",
@@ -641,9 +600,6 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "PyPy",
               "Versions": [
-                "2.7.18 [PyPy 7.3.19]",
-                "3.7.13 [PyPy 7.3.9]",
-                "3.8.16 [PyPy 7.3.11]",
                 "3.9.19 [PyPy 7.3.16]",
                 "3.10.16 [PyPy 7.3.19]"
               ],
@@ -654,7 +610,6 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Ruby",
               "Versions": [
-                "3.0.7",
                 "3.1.7",
                 "3.2.8",
                 "3.3.8"
@@ -675,12 +630,12 @@
                 "NodeType": "TableNode",
                 "Headers": "Property|Value",
                 "Rows": [
-                  "ServiceName|postgresql-x64-14",
-                  "Version|14.17",
+                  "ServiceName|postgresql-x64-17",
+                  "Version|17.5",
                   "ServiceStatus|Stopped",
                   "ServiceStartType|Disabled",
-                  "EnvironmentVariables|PGBIN=C:\\Program Files\\PostgreSQL\\14\\bin <br> PGDATA=C:\\Program Files\\PostgreSQL\\14\\data <br> PGROOT=C:\\Program Files\\PostgreSQL\\14 ",
-                  "Path|C:\\Program Files\\PostgreSQL\\14",
+                  "EnvironmentVariables|PGBIN=C:\\Program Files\\PostgreSQL\\17\\bin <br> PGDATA=C:\\Program Files\\PostgreSQL\\17\\data <br> PGROOT=C:\\Program Files\\PostgreSQL\\17 ",
+                  "Path|C:\\Program Files\\PostgreSQL\\17",
                   "UserName|postgres",
                   "Password|root"
                 ]
@@ -693,7 +648,7 @@
                 "NodeType": "TableNode",
                 "Headers": "Version|ServiceName|ServiceStatus|ServiceStartType",
                 "Rows": [
-                  "5.0.31.0|MongoDB|Stopped|Disabled"
+                  "7.0.20.0|MongoDB|Stopped|Disabled"
                 ]
               }
             }
@@ -706,7 +661,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "Azure CosmosDb Emulator",
-              "Version": "2.14.21.0"
+              "Version": "2.14.23.0"
             },
             {
               "NodeType": "ToolVersionNode",
@@ -727,6 +682,11 @@
               "NodeType": "ToolVersionNode",
               "ToolName": "SQLPS",
               "Version": "1.0"
+            },
+            {
+              "NodeType": "ToolVersionNode",
+              "ToolName": "MongoDB Shell (mongosh)",
+              "Version": "2.5.1"
             }
           ]
         },
@@ -778,14 +738,11 @@
                   "Component.Microsoft.Windows.DriverKit|10.0.26100.12",
                   "Component.OpenJDK|17.13.35710.127",
                   "Component.UnityEngine.x64|17.13.35710.127",
-                  "Component.Unreal|17.13.35710.127",
-                  "Component.Unreal.Android|17.13.35710.127",
                   "Component.Unreal.Ide|17.13.35710.127",
                   "Component.VisualStudio.GitHub.Copilot|17.13.35820.181",
                   "Component.VSInstallerProjects2022|2.0.1",
                   "Component.WixToolset.VisualStudioExtension.Dev17|1.0.0.22",
                   "Component.WixToolset.VisualStudioExtension.Schemas3|1.0.0.22",
-                  "Component.Xamarin|17.13.35710.127",
                   "Component.Xamarin.RemotedSimulator|17.13.35710.127",
                   "ios|18.2.9180.0",
                   "maccatalyst|18.2.9180.0",
@@ -806,7 +763,6 @@
                   "Microsoft.Net.Component.4.6.2.TargetingPack|17.13.35710.127",
                   "Microsoft.Net.Component.4.6.TargetingPack|17.13.35710.127",
                   "Microsoft.Net.Component.4.7.1.TargetingPack|17.13.35710.127",
-                  "Microsoft.Net.Component.4.7.2.SDK|17.13.35710.127",
                   "Microsoft.Net.Component.4.7.2.TargetingPack|17.13.35710.127",
                   "Microsoft.Net.Component.4.7.TargetingPack|17.13.35710.127",
                   "Microsoft.Net.Component.4.8.1.SDK|17.13.35710.127",
@@ -933,9 +889,6 @@
                   "Microsoft.VisualStudio.Component.Web|17.13.35710.127",
                   "Microsoft.VisualStudio.Component.WebDeploy|17.13.35710.127",
                   "Microsoft.VisualStudio.Component.Windows10SDK|17.13.35710.127",
-                  "Microsoft.VisualStudio.Component.Windows10SDK.19041|17.13.35710.127",
-                  "Microsoft.VisualStudio.Component.Windows10SDK.20348|17.13.35710.127",
-                  "Microsoft.VisualStudio.Component.Windows11SDK.22000|17.13.35710.127",
                   "Microsoft.VisualStudio.Component.Windows11SDK.22621|17.13.35710.127",
                   "Microsoft.VisualStudio.Component.Windows11SDK.26100|17.13.35710.127",
                   "Microsoft.VisualStudio.Component.Windows11Sdk.WindowsPerformanceToolkit|17.13.35710.127",
@@ -994,7 +947,6 @@
                   "ProBITools.MicrosoftReportProjectsforVisualStudio2022|3.0.1",
                   "SSIS.MicrosoftDataToolsIntegrationServices|1.5",
                   "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects|2.0.1",
-                  "Windows Driver Kit|10.1.26100.2161",
                   "Windows Driver Kit Visual Studio Extension|10.0.26100.12",
                   "Windows Software Development Kit|10.1.26100.2454",
                   "WixToolset.WixToolsetVisualStudio2022Extension|1.0.0.22"
@@ -1010,12 +962,12 @@
                 "Rows": [
                   "Microsoft Visual C++ 2013 Additional Runtime|x64|12.0.40660",
                   "Microsoft Visual C++ 2013 Minimum Runtime|x64|12.0.40660",
-                  "Microsoft Visual C++ 2022 Additional Runtime|x64|14.42.34438",
+                  "Microsoft Visual C++ 2022 Additional Runtime|x64|14.44.35112",
                   "Microsoft Visual C++ 2022 Debug Runtime|x64|14.42.34438",
-                  "Microsoft Visual C++ 2022 Minimum Runtime|x64|14.42.34438",
-                  "Microsoft Visual C++ 2022 Additional Runtime|x86|14.42.34438",
+                  "Microsoft Visual C++ 2022 Minimum Runtime|x64|14.44.35112",
+                  "Microsoft Visual C++ 2022 Additional Runtime|x86|14.44.35112",
                   "Microsoft Visual C++ 2022 Debug Runtime|x86|14.42.34438",
-                  "Microsoft Visual C++ 2022 Minimum Runtime|x86|14.42.34438"
+                  "Microsoft Visual C++ 2022 Minimum Runtime|x86|14.44.35112"
                 ]
               }
             },
@@ -1023,10 +975,6 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Installed Windows SDKs",
               "Versions": [
-                "10.0.17763.0",
-                "10.0.19041.0",
-                "10.0.20348.0",
-                "10.0.22000.0",
                 "10.0.22621.0",
                 "10.0.26100.0"
               ],
@@ -1043,17 +991,14 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": ".NET Core SDK",
               "Versions": [
-                "6.0.136",
-                "6.0.203",
-                "6.0.321",
-                "6.0.428",
-                "8.0.115",
+                "8.0.116",
                 "8.0.206",
-                "8.0.311",
-                "8.0.408",
-                "9.0.105",
+                "8.0.312",
+                "8.0.409",
+                "9.0.106",
                 "9.0.200",
-                "9.0.203"
+                "9.0.204",
+                "9.0.300"
               ],
               "MajorVersionRegex": "^\\d+\\.\\d+\\.\\d{3}",
               "ListType": "Inline"
@@ -1062,7 +1007,6 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": ".NET Framework",
               "Versions": [
-                "4.7.2",
                 "4.8",
                 "4.8.1"
               ],
@@ -1073,15 +1017,11 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Microsoft.AspNetCore.App",
               "Versions": [
-                "6.0.5",
-                "6.0.26",
-                "6.0.36",
-                "6.0.37",
                 "8.0.6",
                 "8.0.13",
-                "8.0.15",
+                "8.0.16",
                 "9.0.2",
-                "9.0.4"
+                "9.0.5"
               ],
               "MajorVersionRegex": "^.+",
               "ListType": "Inline"
@@ -1090,15 +1030,11 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Microsoft.NETCore.App",
               "Versions": [
-                "6.0.5",
-                "6.0.26",
-                "6.0.36",
-                "6.0.37",
                 "8.0.6",
                 "8.0.13",
-                "8.0.15",
+                "8.0.16",
                 "9.0.2",
-                "9.0.4"
+                "9.0.5"
               ],
               "MajorVersionRegex": "^.+",
               "ListType": "Inline"
@@ -1107,14 +1043,11 @@
               "NodeType": "ToolVersionsListNode",
               "ToolName": "Microsoft.WindowsDesktop.App",
               "Versions": [
-                "6.0.5",
-                "6.0.26",
-                "6.0.36",
                 "8.0.6",
                 "8.0.13",
-                "8.0.15",
+                "8.0.16",
                 "9.0.2",
-                "9.0.4"
+                "9.0.5"
               ],
               "MajorVersionRegex": "^.+",
               "ListType": "Inline"
@@ -1133,7 +1066,7 @@
             {
               "NodeType": "ToolVersionNode",
               "ToolName": "PowerShell",
-              "Version": "7.4.7"
+              "Version": "7.4.10"
             },
             {
               "NodeType": "HeaderNode",
@@ -1152,7 +1085,7 @@
                   "NodeType": "ToolVersionsListNode",
                   "ToolName": "AWSPowershell",
                   "Versions": [
-                    "4.1.813"
+                    "4.1.823"
                   ],
                   "MajorVersionRegex": "^\\d+",
                   "ListType": "Inline"
@@ -1179,7 +1112,7 @@
                   "NodeType": "ToolVersionsListNode",
                   "ToolName": "Microsoft.Graph",
                   "Versions": [
-                    "2.27.0"
+                    "2.28.0"
                   ],
                   "MajorVersionRegex": "^\\d+",
                   "ListType": "Inline"
@@ -1252,13 +1185,13 @@
               "NodeType": "TableNode",
               "Headers": "Package Name|Version",
               "Rows": [
-                "Android Command Line Tools|8.0",
+                "Android Command Line Tools|16.0",
                 "Android Emulator|35.5.10",
-                "Android SDK Build-tools|36.0.0<br>35.0.0 35.0.1<br>34.0.0<br>33.0.0 33.0.1 33.0.2 33.0.3<br>32.0.0<br>31.0.0",
-                "Android SDK Platforms|android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1)",
+                "Android SDK Build-tools|36.0.0<br>35.0.0 35.0.1<br>34.0.0",
+                "Android SDK Platforms|android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)",
                 "Android SDK Platform-Tools|35.0.2",
                 "Android Support Repository|47.0.0",
-                "CMake|3.18.1<br>3.22.1<br>3.31.5",
+                "CMake|3.22.1<br>3.30.5<br>3.31.5",
                 "Google Play services|49",
                 "Google Repository|58",
                 "NDK|26.3.11579264<br>27.2.12479018<br>28.1.13356709"
@@ -1281,21 +1214,6 @@
               }
             }
           ]
-        },
-        {
-          "NodeType": "HeaderNode",
-          "Title": "Cached Docker images",
-          "Children": {
-            "NodeType": "TableNode",
-            "Headers": "Repository:Tag|Digest|Created",
-            "Rows": [
-              "mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022|sha256:e5e37e4db5f44210a0385c8e0d933858c9f0d2fdf1a9caf6e8591b3ecfe3b345 |2025-04-25",
-              "mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022|sha256:9b8a9e04962234e0737f2fc52d99db8d029e82cda0c495b75c0f9a75a895781b |2025-04-25",
-              "mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022|sha256:b04d00f0df9b8d85dab8a59a2f525a47e0726bb41cb5d7c23e46a4d8d816fdd8 |2025-04-25",
-              "mcr.microsoft.com/windows/nanoserver:ltsc2022|sha256:93a3cb1763e5e01bb4121a86f0dd364d1740f9ca1071f496532637873e40969e |2025-04-16",
-              "mcr.microsoft.com/windows/servercore:ltsc2022|sha256:478a07c20826b51e632b0d9a17003b329d873f8f20aec7052e21281fd4e9fbd8 |2025-04-16"
-            ]
-          }
         }
       ]
     }
