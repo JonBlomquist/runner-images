@@ -47,7 +47,7 @@
         [Parameter(Mandatory = $True)]
         [string] $AdminPassword,
         [Parameter(Mandatory = $True)]
-        [string] $AzureLocation,
+        [string] $AzureLocation
 #	    [Parameter(Mandatory = $True)]
 #        [string] $SecurityType
     )
