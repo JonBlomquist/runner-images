@@ -26,9 +26,6 @@
 
         .PARAMETER AzureLocation
             The location where the Azure virtual machine will be provisioned. Example: "eastus"
-        
-        .PARAMETER SecurityType
-            The security type for the virtual machine. Example: "TrustedLaunch" or "Standard"
 
         .EXAMPLE
             CreateAzureVMFromPackerTemplate -SubscriptionId {SubscriptionId} -ResourceGroupName {ResourceGroupName} -VirtualMachineName "testvm1" -ManagedImageName {ManagedImageName} -AdminUsername "shady1" -AdminPassword "SomeSecurePassword1" -AzureLocation "eastus"
@@ -47,9 +44,7 @@
         [Parameter(Mandatory = $True)]
         [string] $AdminPassword,
         [Parameter(Mandatory = $True)]
-        [string] $AzureLocation,
-#	    [Parameter(Mandatory = $True)]
-#        [string] $SecurityType
+        [string] $AzureLocation
     )
 
     $vmSize = "Standard_DS2_v2"
@@ -57,10 +52,7 @@
     $vnetName = $env:UserName + "vnet-" + $guid
     $subnetName = $env:UserName + "subnet-" + $guid
     $nicName = $env:UserName + "nic-" + $guid
-#    $publicIpName = $env:UserName + "pip-" + $guid
-#    $trustedLaunch = $SecurityType
-    $subscriptionId = $SubscriptionId
-
+    $publicIpName = $env:UserName + "pip-" + $guid
 
     Write-Host "Creating a virtual network and subnet"
     ($vnet = az network vnet create -g $ResourceGroupName -l $AzureLocation -n $vnetName --address-prefixes 10.0.0.0/16 --subnet-name $subnetName --subnet-prefixes 10.0.1.0/24 --subscription $subscriptionId -o json)
@@ -70,12 +62,12 @@
     ($nic = az network nic create -g $ResourceGroupName -l $AzureLocation -n $nicName --subnet $subnetId --subscription $subscriptionId -o json)
     $networkId = ($nic | ConvertFrom-Json).NewNIC.id
 
-#    Write-Host "`nCreating a public IP address"
-#    ($publicIp = az network public-ip create -g $ResourceGroupName -l $AzureLocation -n $publicIpName --allocation-method Static --sku Basic --version IPv4 --subscription $subscriptionId -o json)
-#    $publicIpId = ($publicIp | ConvertFrom-Json).publicIp.id
+    Write-Host "`nCreating a public IP address"
+    ($publicIp = az network public-ip create -g $ResourceGroupName -l $AzureLocation -n $publicIpName --allocation-method Static --sku Basic --version IPv4 --subscription $subscriptionId -o json)
+    $publicIpId = ($publicIp | ConvertFrom-Json).publicIp.id
 
-#    Write-Host "`nAdding the public IP to the NIC"
-#    az network nic ip-config update -g $ResourceGroupName -n ipconfig1 --nic-name $nicName --public-ip-address $publicIpId --subscription $subscriptionId
+    Write-Host "`nAdding the public IP to the NIC"
+    az network nic ip-config update -g $ResourceGroupName -n ipconfig1 --nic-name $nicName --public-ip-address $publicIpId --subscription $subscriptionId
 
     Write-Host "`nCreating the VM"
     az vm create `
@@ -87,8 +79,7 @@
         --admin-password $AdminPassword `
         --nics $networkId `
         --subscription $subscriptionId `
-        --location $AzureLocation `
-	    #--security-type $TrustedLaunch `
+        --location $AzureLocation
 
-    Write-Host "`nCreated in ${ResourceGroupName}:`n  vnet ${vnetName}`n  subnet ${subnetName}`n  nic ${nicName}`n  vm ${VirtualMachineName}"
+    Write-Host "`nCreated in ${ResourceGroupName}:`n  vnet ${vnetName}`n  subnet ${subnetName}`n  nic ${nicName}`n  publicip ${publicIpName}`n  vm ${VirtualMachineName}"
 }
